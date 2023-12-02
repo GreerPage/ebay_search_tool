@@ -11,10 +11,11 @@ from ebay_search import user_input, search, sort
 
 
 if __name__ == '__main__':
-    item, priority, budget, filters = user_input()
+    item, budget, filters = user_input()
     items = search(item)
     items = sort(items, filters, budget)
     for item in items:
+        print(item.filters, filters)
         print(item.name, item.link)
         choice = input('Press enter to show another item, or q to quit. ')
         if choice == 'q':

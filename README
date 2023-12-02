@@ -10,6 +10,8 @@ Use:
     - Enter the filters of your choice
 
 Results: 
+    - Results are filtered based on your budget, filters, and seller ratings
+        - The highest rated seller's items are shown first
     - Results are displayed with the name of the item and a link to the item's page
         - Depending on your terminal, this link can be clicked or pasted into a browser window
     - To view the next item hit enter
