@@ -15,8 +15,8 @@ if __name__ == '__main__':
     items = search(item)
     items = sort(items, filters, budget)
     if not items:
-        print('No items found, try chaning your search criteria.')
-        
+        print('No items found, try changing your search criteria.')
+
     for item in items:
         print(item.name, item.link)
         choice = input('Press enter to show another item, or q to quit. ')
