@@ -41,7 +41,7 @@ def budget_filter(items, budget):
             avg = (item.price[1] - item.price[0]) / 2
             price = item.price[0] + avg
             if price < budget:
-                new.append(item)
+                new_prices.append(item)
     
     return new_prices
 
