@@ -1,0 +1,20 @@
+Ebay Search Tool
+
+By Greer Page (cgpage@uvm.edu) & Jack Taylor (jwtaylor@uvm.edu)
+
+Use:
+    - Run ebay_search.py
+    - Enter the item youre searching for, be as specific as possible
+    - Enter your budget, only items will below your budget will be returned
+        - Items that have a ranged price are sorted based on the average price
+    - Enter the filters of your choice
+
+Results: 
+    - Results are displayed with the name of the item and a link to the item's page
+        - Depending on your terminal, this link can be clicked or pasted into a browser window
+    - To view the next item hit enter
+    - To stop seeing items hit q
+
+Requirements: 
+    - This program requires the python requests and beautifulsoup4 libraries 
+    - These can be installed by running pip install -r requirements.txt
