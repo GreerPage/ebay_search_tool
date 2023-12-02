@@ -36,7 +36,7 @@ class Item():
     def get_filters(self):
         item_has = {
             'new': False, 
-            'buy': True, 
+            'buy': False, 
             'free_returns': False, 
             'free_shipping': False
         }
@@ -46,7 +46,7 @@ class Item():
             item_has['free_shipping'] = True
         if self.item.findAll(text='Free returns'):
             item_has['free_returns'] = True
-        if self.item.findAll(text='bids'):
-            item_has['buy'] = False
+        if self.item.findAll(text='Buy It Now') or self.item.findAll(text='or Best Offer'):
+            item_has['buy'] = True
         
         self.filters = item_has
