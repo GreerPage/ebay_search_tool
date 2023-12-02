@@ -49,13 +49,9 @@ def budget_filter(items, budget):
 
 def sort(items, filters, budget):
     """Handles all of the item sorting"""
-    print(len(items))
     items = meets_filters(items, filters)
-    print(len(items))
     items = budget_filter(items, budget)
-    print(len(items))
     items = sort_highest_rating(items)
-    print(len(items))
     return items
     
 
