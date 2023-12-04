@@ -16,6 +16,12 @@ class Item():
         self.rating = item.find('span', class_='s-item__seller-info-text')
         self.link = item.find_all('a')[0].get('href')
         self.name = item.find('div', class_='s-item__title').span.text
+        self.filters = {
+            'new': False, 
+            'buy': False, 
+            'free_shipping': False, 
+            'free_returns': False
+        }
     
     def get_price(self):
         self.price = self.price.text.replace('$', '').replace(',', '')
@@ -34,19 +40,11 @@ class Item():
             self.rating = 0
     
     def get_filters(self):
-        item_has = {
-            'new': False, 
-            'buy': False, 
-            'free_returns': False, 
-            'free_shipping': False
-        }
         if self.item.findAll(text='Brand New'):
-            item_has['new'] = True
+            self.filters['new'] = True
         if self.item.findAll(text='Free shipping'):
-            item_has['free_shipping'] = True
+            self.filters['free_shipping'] = True
         if self.item.findAll(text='Free returns'):
-            item_has['free_returns'] = True
+            self.filters['free_returns'] = True
         if self.item.findAll(text='Buy It Now') or self.item.findAll(text='or Best Offer'):
-            item_has['buy'] = True
-        
-        self.filters = item_has
+            self.filters['buy'] = True
