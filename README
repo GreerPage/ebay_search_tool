@@ -5,7 +5,7 @@ By Greer Page (cgpage@uvm.edu) & Jack Taylor (jwtaylor@uvm.edu)
 Use:
     - Run ebay_search.py
     - Enter the item youre searching for, be as specific as possible
-    - Enter your budget, only items will below your budget will be returned
+    - Enter your budget, only items below your budget will be returned
         - Items that have a ranged price are sorted based on the average price
     - Enter the filters of your choice
 
