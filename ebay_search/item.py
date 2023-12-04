@@ -14,7 +14,7 @@ class Item():
         self.item = item
         self.price = item.find('span', class_='s-item__price')
         self.rating = item.find('span', class_='s-item__seller-info-text')
-        self.link = self.item.find_all('a')[0].get('href')
+        self.link = item.find_all('a')[0].get('href')
         self.name = item.find('div', class_='s-item__title').span.text
     
     def get_price(self):
