@@ -53,7 +53,3 @@ def sort(items, filters, budget):
     items = budget_filter(items, budget)
     items = sort_highest_rating(items)
     return items
-    
-
-
-
