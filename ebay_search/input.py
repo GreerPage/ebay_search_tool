@@ -11,15 +11,6 @@ def user_input():
     """Recieves user input for various queries and outputs a strings and a dict"""
     uri = input("What item are you looking for?: ").lower()
     uri = uri.replace(" ", "+")
-    """print("Price (p)")
-    print("Seller rating (s)")
-    while True:
-        priority = input("Select priority item attribute (p/s): ").lower()
-        if priority not in ["p", "s"]:
-            print("Please only enter 'p' or 's'.")
-            print("Please try again.")
-        else:
-            break"""
     
     while True:
         try:
