@@ -14,9 +14,26 @@ Results:
         - The highest rated seller's items are shown first
     - Results are displayed with the name of the item and a link to the item's page
         - Depending on your terminal, this link can be clicked or pasted into a browser window
+    - If no item is found to meet the given criteria, the program will not return an item. 
     - To view the next item hit enter
     - To stop seeing items hit q
+
+Testing:
+    - We tested by inputing things we would really buy on Ebay
+    - We followed the link provided by the program to see if it met our filters and budget
+    - We looked at each result to see that seller reviews descend from highest rated seller to lowest
 
 Requirements: 
     - This program requires the python requests and beautifulsoup4 libraries 
     - These can be installed by running pip install -r requirements.txt
+
+Roles:
+    Jack:
+        - I wrote all of the input handling, including input validation for the 
+            - item
+            - budget
+            - characteristics of letters
+        - I also formatted the item for searching in the eBay url.
+    Greer: 
+        - I handled most of the backend work
+        - I wrote the search and sort functions as well as the Item class to parse the raw html into useful python  
